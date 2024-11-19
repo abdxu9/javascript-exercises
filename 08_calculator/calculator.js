@@ -7,21 +7,14 @@ const subtract = function(firstNumber, secondeNumber) {
 };
 
 const sum = function(array) {
-  elementSum = 0; 
-  while(array.length !== 0){
-    elementSum += array[array.length - 1];
-    array.pop();
-  }
-  return elementSum;
+  let sum = 0
+  return array.reduce((element,sum) => element + sum, sum);
 };
 
 const multiply = function(array) {
-  elementMultiply = 1; 
-  while(array.length !== 0){
-    elementMultiply = elementMultiply * array[array.length - 1];
-    array.pop();
-  }
-  return elementMultiply;
+  mult = 1;
+  return array.reduce((element,mult) => element * mult,mult)
+  
 };
 
 const power = function(numberToPower, power) {
