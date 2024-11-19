@@ -6,11 +6,9 @@ const findTheOldest = function(Persons) {
         else{
             const currentTime = new Date()
             return currentTime.getFullYear() - element.yearOfBirth
-        }
-        
+        } 
     });
     index = agePersonne.findIndex((element) => element == Math.max(...agePersonne));
-    console.log(index);
     return Persons[index];
 };
 
